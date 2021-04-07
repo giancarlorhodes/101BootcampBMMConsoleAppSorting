@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "101BootcampBMMConsoleAppSorting", "101BootcampBMMConsoleAppSorting\101BootcampBMMConsoleAppSorting.csproj", "{630A4254-EACD-4D9B-91AF-17506E2A020A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrarySorting", "ClassLibrarySorting\ClassLibrarySorting.csproj", "{87F810D8-0FBA-46A9-A417-231D8E96D0C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{630A4254-EACD-4D9B-91AF-17506E2A020A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{630A4254-EACD-4D9B-91AF-17506E2A020A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{630A4254-EACD-4D9B-91AF-17506E2A020A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{630A4254-EACD-4D9B-91AF-17506E2A020A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87F810D8-0FBA-46A9-A417-231D8E96D0C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87F810D8-0FBA-46A9-A417-231D8E96D0C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87F810D8-0FBA-46A9-A417-231D8E96D0C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87F810D8-0FBA-46A9-A417-231D8E96D0C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27ACD7C9-2E94-49F4-B604-EF86879D57A3}
+	EndGlobalSection
+EndGlobal
