@@ -8,14 +8,16 @@ namespace ClassLibrarySorting
 {
 
 
-    public class Sorting : ISortable
+    public class Sort : ISortable
     {
 
         public List<int> ListOfIntegers { get; set; }
         const int rangeMax = 100;
         const int numberElements = 100;
 
-        public Sorting()
+
+        // constructors
+        public Sort()
         {
             ListOfIntegers = new List<int>();
             int seed = (int)DateTime.Now.Ticks;
@@ -28,7 +30,7 @@ namespace ClassLibrarySorting
         }
 
 
-        public Sorting(int inNumberOfElements, int inRangeMax)
+        public Sort(int inNumberOfElements, int inRangeMax)
         {
             ListOfIntegers = new List<int>();
             int seed = (int)DateTime.Now.Ticks;
@@ -40,13 +42,49 @@ namespace ClassLibrarySorting
             }
         }
 
-        public void BubbleSort() { }
+        //public void BubbleSort() { }
 
-        List<int> ISortable.Sorting(List<int> unsortList)
+        public List<int> Sorting(List<int> unsortList)
         {
-            // throw new NotImplementedException();
-            return new List<int>() { 0, 1, 2 }; // very poor implementation, does it meet the contract? Yes. 
+           return unsortList; // // very poor implementation, does it meet the contract? Yes. 
         }
+
+        public List<int> Sorting(List<int> unsortList, AscendingOrDescending aORd)
+        {
+            return unsortList; // // very poor implementation, does it meet the contract? Yes. 
+        }
+
+        public List<int> GenerateIntList(int numberOfIntergersToGenerate)
+        {
+            return Generate(numberOfIntergersToGenerate, int.MinValue, int.MaxValue);
+        }
+
+        private static List<int> Generate(int numberOfIntergersToGenerate, int min, int max)
+        {
+            Random rnd = new Random();
+            List<int> list = new List<int>();
+
+            for (int i = 0; i < numberOfIntergersToGenerate; i++)
+            {
+                list.Add(rnd.Next(min, max));
+            }
+            return list;
+        }
+
+        public List<int> GenerateIntList(int numberOfIntergersToGenerate, int minNum, int maxNum) 
+        {
+
+            return Generate(numberOfIntergersToGenerate, minNum, maxNum);
+
+        }
+
+
+        //// methods that implement the sort
+        //List<int> ISortable.Sorting(List<int> unsortList)
+        //{
+        //    // throw new NotImplementedException();
+        //    return new List<int>() { 0, 1, 2 }; // very poor implementation, does it meet the contract? Yes. 
+        //}
 
 
 

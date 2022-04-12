@@ -12,7 +12,7 @@ namespace _101BootcampBMMConsoleAppSorting
         {
 
             Console.WriteLine("Starting ....");
-            Sorting s = new Sorting(10,100000); // this will create a million integers
+            Sort s = new Sort(10,100000); // this will create a million integers
             Console.WriteLine("Sorting object created.");
 
             Console.WriteLine("Before the sort");
@@ -22,7 +22,7 @@ namespace _101BootcampBMMConsoleAppSorting
             //    Console.WriteLine(item);
             //}
 
-            s.BubbleSort(); // how long it this going to take
+            //s.BubbleSort(); // how long it this going to take
 
             DateTime timeStampStop = DateTime.Now;
             TimeSpan ts = timeStampStop - timeStampStart;

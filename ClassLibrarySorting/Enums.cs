@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrarySorting
 {
-    enum AscendingOrDescending
+    public enum AscendingOrDescending
     {
         Ascending,
         Descending
