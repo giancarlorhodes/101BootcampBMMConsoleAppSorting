@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,28 +13,22 @@ namespace _101BootcampBMMConsoleAppSorting
         {
 
             Console.WriteLine("Starting ....");
-            Sort s = new Sort(10,100000); // this will create a million integers
-            Console.WriteLine("Sorting object created.");
+            Sort s = new Sort();
+            List<int> unSorted = s.GenerateIntList(10, 1, 10);
 
-            Console.WriteLine("Before the sort");
-            DateTime timeStampStart = DateTime.Now;
-            //foreach (int item in s.ListOfIntegers)
-            //{
-            //    Console.WriteLine(item);
-            //}
+            Console.WriteLine("unsorted");
+            foreach (int i in unSorted) 
+            { 
+                Console.WriteLine(i);                
+            }
 
-            //s.BubbleSort(); // how long it this going to take
+            DateTime timeStampStart = DateTime.Now;           
+            List<int> _sorted =  s.Sorting(unSorted); // how long it this going to take
 
-            DateTime timeStampStop = DateTime.Now;
-            TimeSpan ts = timeStampStop - timeStampStart;
-            Console.WriteLine("After the sort, time elapsed in seconds is: " + ts);
-            int counter = 0;
-            foreach (int item in s.ListOfIntegers)
+            Console.WriteLine("sorted");
+            foreach (int item in _sorted)
             {
                 Console.WriteLine(item);
-
-                if (counter >= 10) break;
-                counter = counter + 1;
             }
 
             Console.ReadLine();

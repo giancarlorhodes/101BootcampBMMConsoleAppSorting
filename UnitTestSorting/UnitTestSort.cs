@@ -59,7 +59,7 @@ namespace UnitTestSorting
 
 
         [TestMethod]
-        public void Sort_100_integers_descending()
+        public void Sort_100_integers_ascending()
         {
 
             // arrange
@@ -101,7 +101,7 @@ namespace UnitTestSorting
 
             // arrange
             List<int> _listUnsorted = new List<int>();
-            //_listUnsorted = new List<int> { 100, 21, 3 }; // ascending
+            //_listUnsorted = new List<int> { 3, 21, 131 }; // ascending
 
             // act
             _listUnsorted = _sort.GenerateIntList(100, 1, 100000);
@@ -118,7 +118,7 @@ namespace UnitTestSorting
             {
                 if (i > 0)
                 {
-                    if (_listSorted[i] < _listSorted[i - 1] || _listSorted[i] == _listSorted[i - 1])
+                    if (_listSorted[i] > _listSorted[i - 1] || _listSorted[i] == _listSorted[i - 1])
                     {
                         continue;
                     }
@@ -140,7 +140,7 @@ namespace UnitTestSorting
 
             // arrange
             List<int> _listUnsorted = new List<int>();
-            //_listUnsorted = new List<int> { 100, 100, 21, 3, 3, 3  }; // ascending
+            //_listUnsorted = new List<int> { 3, 3, 2, 21, 100, 100, 21 }; // ascending
 
             // act
             _listUnsorted = _sort.GenerateIntList(1000, 1, 100);
@@ -157,7 +157,7 @@ namespace UnitTestSorting
             {
                 if (i > 0)
                 {
-                    if (_listSorted[i] < _listSorted[i - 1] || _listSorted[i] == _listSorted[i - 1])
+                    if (_listSorted[i] > _listSorted[i - 1] || _listSorted[i] == _listSorted[i - 1])
                     {
                         continue;
                     }
@@ -178,7 +178,7 @@ namespace UnitTestSorting
 
             // arrange
             List<int> _listUnsorted = new List<int>();
-            //_listUnsorted = new List<int> { -100, -100, -21, -3, 3, 3 }; // descending
+            //_listUnsorted = new List<int> { 3, 3, -3, -21, -100, -100 }; // descending
 
             // act
             _listUnsorted = _sort.GenerateIntList(1000, -100, 100);
@@ -194,7 +194,7 @@ namespace UnitTestSorting
             {
                 if (i > 0)
                 {
-                    if (_listSorted[i] > _listSorted[i - 1] || _listSorted[i] == _listSorted[i - 1])
+                    if (_listSorted[i] < _listSorted[i - 1] || _listSorted[i] == _listSorted[i - 1])
                     {
                         continue;
                     }
@@ -230,7 +230,7 @@ namespace UnitTestSorting
             {
                 if (i > 0)
                 {
-                    if (_listSorted[i] > _listSorted[i - 1] || _listSorted[i] == _listSorted[i - 1])
+                    if (_listSorted[i] < _listSorted[i - 1] || _listSorted[i] == _listSorted[i - 1])
                     {
                         continue;
                     }
