@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30406.217
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "101BootcampBMMConsoleAppSorting", "101BootcampBMMConsoleAppSorting\101BootcampBMMConsoleAppSorting.csproj", "{630A4254-EACD-4D9B-91AF-17506E2A020A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrarySorting", "ClassLibrarySorting\ClassLibrarySorting.csproj", "{87F810D8-0FBA-46A9-A417-231D8E96D0C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestSorting", "UnitTestSorting\UnitTestSorting.csproj", "{C4AB5955-DC00-4924-A1F3-EA639B317E50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{87F810D8-0FBA-46A9-A417-231D8E96D0C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87F810D8-0FBA-46A9-A417-231D8E96D0C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87F810D8-0FBA-46A9-A417-231D8E96D0C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4AB5955-DC00-4924-A1F3-EA639B317E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4AB5955-DC00-4924-A1F3-EA639B317E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4AB5955-DC00-4924-A1F3-EA639B317E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4AB5955-DC00-4924-A1F3-EA639B317E50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
