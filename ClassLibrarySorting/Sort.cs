@@ -129,7 +129,7 @@ namespace ClassLibrarySorting
             List<int> _list = new List<int>();  
             if (ds == AscendingOrDescending.Ascending)
             {
-                _list = this.Sorting(unsortList);               
+                _list = this.Sorting(unsortList);  // asc 1,2,3,4, 100 ...             
             }
 
 

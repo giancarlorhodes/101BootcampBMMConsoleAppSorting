@@ -22,7 +22,5 @@ namespace ClassLibrarySorting
         // pass in a length and integers will be Pseudorandom number generated and will be passed back
         List<int> GenerateIntList(int numberOfIntergersToGenerate, int minNum, int maxNum);
 
-
-
     }
 }
