@@ -14,6 +14,7 @@ namespace _101BootcampBMMConsoleAppSorting
 
             Console.WriteLine("Starting ....");
             Sort s = new Sort();
+
             List<int> unSorted = s.GenerateIntList(10, 1, 10);
 
             Console.WriteLine("unsorted");
