@@ -12,8 +12,6 @@ namespace ClassLibrarySorting
 
        
         // methods implements ISortable
-       
-
         public List<int> GenerateIntList(int numberOfIntergersToGenerate)
         {
             return Generate(numberOfIntergersToGenerate, int.MinValue, int.MaxValue);
@@ -45,6 +43,26 @@ namespace ClassLibrarySorting
             return sortedList;
         }
 
+        public  List<int> Sorting(List<int> unsortedList, AscendingOrDescending ds, SortEnum st) 
+        {
+            List<int> _list;
+            switch (st)
+            {
+                case SortEnum.BubbleSort:
+                    _list = this.Sorting(unsortedList, ds);
+                    break;
+                //case SortEnum.MergeSort:
+                //    break;
+                //case SortEnum.TallySort:
+                //    break;
+                default:
+                    _list = this.Sorting(unsortedList, ds);
+                    break;
+            }
+
+            return _list;
+        }
+
 
         public List<int> Sorting(List<int> unsortedList, AscendingOrDescending ds)
         {
@@ -56,9 +74,7 @@ namespace ClassLibrarySorting
             // repeatedly swapping the adjacent elements if they are in wrong order.
             // 12, 5, 7, 10, 1, 160 arranged in ascending order are 1, 5, 7, 10, 12, 160. descending 
             // it opposite.
-
-                              
-
+                             
             if (sortedList == null || sortedList.Count <= 1)
             {
                 return sortedList;
@@ -79,7 +95,7 @@ namespace ClassLibrarySorting
                             if (ds == AscendingOrDescending.Descending)
                             {
                                 // step 1 compare 1st and 2nd element, if 1st in greater then 2nd, flip their positions
-                                if (sortedList[i] > sortedList[i - 1])
+                                if (sortedList[i] > sortedList[i - 1]) // flip them
                                 {
                                     int temp = sortedList[i - 1];
                                     sortedList[i - 1] = sortedList[i];
@@ -88,10 +104,10 @@ namespace ClassLibrarySorting
                                 }
                                 // step 2 continue down the array position, comparing 2nd and 3rd. ...
                             }
-                            else // ascending is the default
+                            else // ascending is the default  1, 2, 9 ... 
                             {
-                                // step 1 compare 1st and 2nd element, if 1st in greater then 2nd, flip their positions
-                                if (sortedList[i] < sortedList[i - 1])
+                                // step 1 compare 1st and 2nd element, if 2st in greater then 1nd, flip their positions
+                                if (sortedList[i] < sortedList[i - 1]) // flip them
                                 {
                                     int temp = sortedList[i];
                                     sortedList[i] = sortedList[i - 1];

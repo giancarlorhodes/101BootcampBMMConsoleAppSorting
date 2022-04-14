@@ -32,6 +32,21 @@ namespace _101BootcampBMMConsoleAppSorting
                 Console.WriteLine(item);
             }
 
+            Console.WriteLine();
+            Console.WriteLine("unsorted mergesort");
+            int[] arr = new int[] { 200, 3, 66544, 23, 23, 34, 345345, 354, 3, 565, 4, 5, 567, 34, 5 };
+            foreach (var item in arr)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine();
+            Console.WriteLine("sorted mergesort");
+            int[] arr2 = MergeSort.mergeSort(arr);
+            foreach (var item in arr2)
+            {
+                Console.WriteLine(item);
+            }
+
             Console.ReadLine();
         }
     }
